@@ -9,15 +9,10 @@ namespace XML_övning
         public string petName;
         public string petDesc;
         public int petSpeed;
-        int petLifeSpan = new LifeSpan().LifeSpanGenerator();
+        public LifeSpan petLifeSpan;
     }
-    class LifeSpan
+    public class LifeSpan
     {
-        public int LifeSpanGenerator()
-        {
-            Random generator = new Random();
-            int lifeSpan = generator.Next(60,4321);
-            return lifeSpan;
-        }
+        public int lifeSpan;
     }
 }
